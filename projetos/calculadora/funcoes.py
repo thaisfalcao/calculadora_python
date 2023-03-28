@@ -4,3 +4,5 @@ def soma(a,b):
   except TypeError:
     print(f"O input 'a' e 'b' devem ser uma string, recebido {a}: {type(a)} e {b}: {type(b)}")
 
+def subtracao(a,b):
+    return a-b
