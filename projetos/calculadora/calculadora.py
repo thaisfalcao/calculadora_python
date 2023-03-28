@@ -1,19 +1,19 @@
-from funcoes import soma
-from funcoes import subtracao
-from funcoes import multiplicacao
-from funcoes import divisao
+from funcoes import *
 
 def calcule():
     n1 = input("Digite o primeiro número: ")
+    print(n1)
     n2 = input("Digite o segundo número: ")
+    print(n2)
     operacao = input("Digite a operação desejada: ")
+    print(operacao)
     if operacao == "soma" or operacao == "+":
-        return soma(n1,n2)
+        print(soma(n1,n2))
     elif operacao == "subtração" or operacao == "-":
-        return subtracao(n1,n2)
+        print(subtracao(n1,n2))
     elif operacao == "multiplicação" or operacao == "*":
-        return multiplicacao(n1,n2)
+        print(multiplicacao(n1,n2))
     elif operacao == "divisão" or operacao == "/":
-        return divisao(n1,n2)
+        print(divisao(n1,n2))
     else:
         print("Operação inválida")
