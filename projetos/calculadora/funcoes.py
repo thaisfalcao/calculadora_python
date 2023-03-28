@@ -12,3 +12,9 @@ def multiplicacao(a,b):
     return a*b
   except TypeError:
     print(f"O input 'a' e 'b' devem ser uma string, recebido {a}: {type(a)} e {b}: {type(b)}")
+
+def divisao(a,b):
+    try:
+        return a/b
+    except ZeroDivisionError:
+        print("Não é possível dividir por zero.")
